@@ -9,7 +9,7 @@
 </br></br>
 
 <p align="center" >
-  <a href="https://feedtruck.herokuapp.com"><img src="https://github.com/aauugguussttiinn/Feedtruck/blob/readme/app/assets/images/banniere_feedtruck.png" alt="banniere_feedtruck"/></a>
+  <img src="https://github.com/aauugguussttiinn/Feedtruck/blob/readme/app/assets/images/banniere_feedtruck.png" alt="banniere_feedtruck"/>
 </p>
 
 
@@ -51,5 +51,3 @@ It allows to develop a close relationship with the restaurant owners and to deve
   ```
   
   Then, access the app in your browser at http://localhost:3000/ 
-
- - In production, go to the [FeedTruck app](https://feedtruck.herokuapp.com) and enjoy the experience

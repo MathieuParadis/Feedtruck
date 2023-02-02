@@ -3,7 +3,8 @@ class CustomerMailer < ApplicationMailer
 
   def welcome_email(customer)
     @customer = customer
-    @url = 'https://feedtruck.herokuapp.com/customers/sign_in'
+    # @url = 'https://feedtruck.herokuapp.com/customers/sign_in'
+    @url = 'http://localhost:3000/customers/sign_in'
     mail(to: @customer.email, subject: 'Bienvenue sur FeedTruck')
   end
   
@@ -13,7 +14,8 @@ class CustomerMailer < ApplicationMailer
     @foodtruck = @order.foodtruck
     @order_contents = @order.order_contents   
     @total_price = @order.total_price
-    @url = 'https://feedtruck.herokuapp.com/customer/orders'
+    # @url = 'https://feedtruck.herokuapp.com/customer/orders'
+    @url = 'http://localhost:3000/customer/orders'
     mail(to: @customer.email, subject: 'Confirmation de votre commande')
   end
 

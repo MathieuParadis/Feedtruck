@@ -3,7 +3,8 @@ class FoodtruckMailer < ApplicationMailer
 
   def welcome_email(foodtruck)
     @foodtruck = foodtruck  
-    @url = 'https://feedtruck.herokuapp.com/myfoodtruck/foodtrucks/sign_in'
+    # @url = 'https://feedtruck.herokuapp.com/myfoodtruck/foodtrucks/sign_in'
+    @url = 'http://localhost:3000/myfoodtruck/foodtrucks/sign_in'
     mail(to: @foodtruck.email, subject: 'Bienvenue sur FeedTruck')
   end
  
@@ -14,6 +15,7 @@ class FoodtruckMailer < ApplicationMailer
     @order_contents = @order.order_contents   
     @total_price = @order.total_price
     @url = 'https://feedtruck.herokuapp.com/foodtruck/orders'
+    @url = 'http://localhost:3000/foodtruck/orders'
     mail(to: @foodtruck.email, subject: 'Vous avez reçu une nouvelle commande')
   end
 
